@@ -1,0 +1,14 @@
+{
+  "name": "portfolio",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Hugo Farji <hugo@6700.com.ar>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/hdf1986/portfolio",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.1.0"
+  }
+}
