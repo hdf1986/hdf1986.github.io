@@ -1,7 +1,6 @@
-exports.show = function () {
-  return 43
-}
-
-exports.index = function () {
-  return 49
-}
+exports.show = new Mugi.Controller ((req,res)=>{
+  res.send("test")
+})
+exports.index = new Mugi.Controller ((req,res)=>{
+  res.send("test")
+})
