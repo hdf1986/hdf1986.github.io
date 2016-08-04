@@ -1,5 +1,7 @@
 exports.show = new Mugi.Controller ((req,res)=>{
-  res.send("test")
+	return {
+		test: "hola!"
+	}
 })
 exports.index = new Mugi.Controller ((req,res)=>{
   res.send("test")

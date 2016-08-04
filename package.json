@@ -18,6 +18,7 @@
   "homepage": "https://github.com/hdf1986/portfolio#readme",
   "dependencies": {
     "express": "^4.14.0",
+    "pug": "2.0.0-beta4",
     "require-directory": "2.1.1"
   }
 }
