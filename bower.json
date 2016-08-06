@@ -1,0 +1,11 @@
+{
+  "name": "portfolio",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Hugo Farji <hugo@6700.com.ar>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/hdf1986/portfolio",
+  "private": true
+}
