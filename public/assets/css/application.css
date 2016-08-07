@@ -98,13 +98,12 @@ h2 {
 
 .flipper .downside p
 {
-  text-align:justify;;
+  text-align:justify;
   display:block;
   font-size:15px;
 }
 
 .flipper .downside {
-  display: block;
 	backface-visibility: hidden;
 	position: absolute;
   width:100%;
@@ -114,4 +113,13 @@ h2 {
   transform: rotateY(180deg);
   background: white;
   color:black;
+}
+
+.flex-center-both {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+  width:100%;
 }
