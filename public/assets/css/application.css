@@ -1,9 +1,5 @@
 body {
   background-color: black;
-  background-image: url('/assets/images/background.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
   color: white;
   font-family: 'Dosis', sans-serif;
   height: 100vh;
@@ -12,6 +8,10 @@ body {
 
 .overlay {
   background: black;
+  background-image: url('/assets/images/background.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
   opacity:0.8;
   width:100%;
   height:100%;
@@ -34,7 +34,44 @@ h2 {
 .splitter {
   height:100vh;
   width: 100%;
+  padding:30px;
   font-size:20px;
+  text-align: justify;
+  background:rgba(0,0,0,0.8)
+}
+
+.splitter .profile p{
+  border: 1px solid #666;
+  padding: 12px;
+  border-radius: 12px;
+  margin-left: 10px;
+  box-shadow: 0 0 6px white;
+}
+.splitter .profile p a {
+  color:white;
+  font-weight: bold;
+  position: relative;
+}
+
+.splitter .profile p a:hover, .splitter .profile p a:active {
+  color:white;
+  font-weight: bold;
+  position: relative;
+  text-decoration: none;
+}
+
+.splitter .profile p a:after {
+  content: ' ';
+  height:1px;
+  width:100%;
+  background:white;
+  display:block;
+  position: absolute;
+  bottom:0;
+  left:0;
+}
+
+.profile p {
   text-align: justify;
 }
 
@@ -122,4 +159,49 @@ h2 {
   align-items: center;
   height:100%;
   width:100%;
+}
+
+.contact {
+  text-align: center;
+  flex-direction: column;
+}
+
+.contact form {
+  border-radius: 6px;
+}
+
+.contact input, .contact textarea {
+  border: 1px solid #666;
+  background: transparent;
+  border-radius: 12px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.contact input {
+  border-bottom: 0px solid white;
+  border-radius: 0;
+}
+.contact input.first {
+  border-radius: 0;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.contact input[type="submit"] {
+  text-align: center;
+  margin: 5px;
+  padding:6px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius:18px;
+  border:1px solid #666;
+  transition: 0.3s ease-in;
+}
+.contact input[type="submit"]:hover {
+  background: white;
+  color:black;
+  border-color: transparent;
+}
+.contact a{
+  color:white
 }
