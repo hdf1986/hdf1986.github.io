@@ -1,207 +1,69 @@
 body {
-  background-color: black;
-  color: white;
-  font-family: 'Dosis', sans-serif;
-  height: 100vh;
-  width: 100%;
+  background: white;
 }
 
-.overlay {
-  background: black;
-  background-image: url('/assets/images/background.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
+header {
+  background-image: url('/assets/images/F100009796.jpg');
+  color:white;
   background-size: cover;
-  opacity:0.8;
-  width:100%;
-  height:100%;
-  position:fixed;
-  top:0;
-  left:0;
-  z-index: -10;
-}
-
-h1, h2, h3, h4 {
-  font-family: 'Cookie', cursive;
-}
-
-h2 {
-  font-size: 55px;
+  font-family: 'Raleway', sans-serif;
   text-align: center;
-  height:10vh;
+  flex-direction: row;
+  display:flex;
 }
 
-.splitter {
-  height:100vh;
-  width: 100%;
-  padding:30px;
-  font-size:20px;
-  text-align: justify;
-  background:rgba(0,0,0,0.8)
-}
-
-.splitter .profile p{
-  border: 1px solid #666;
-  padding: 12px;
-  border-radius: 12px;
-  margin-left: 10px;
-  box-shadow: 0 0 6px white;
-}
-.splitter .profile p a {
-  color:white;
+h1 {
   font-weight: bold;
-  position: relative;
+  text-transform: uppercase;
+  font-size: 5rem;
 }
 
-.splitter .profile p a:hover, .splitter .profile p a:active {
-  color:white;
-  font-weight: bold;
-  position: relative;
-  text-decoration: none;
+.site-heading span {
+  font-size: 2rem;
 }
 
-.splitter .profile p a:after {
-  content: ' ';
-  height:1px;
-  width:100%;
-  background:white;
-  display:block;
-  position: absolute;
-  bottom:0;
-  left:0;
-}
-
-.profile p {
-  text-align: justify;
-}
-
-.hero {
-  display: flex;
+header > .container {
+  background: rgba(0, 0, 0, 0.5);
+  flex: 1;
+  display:flex;
+  content:' ';
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-family: 'Cookie', cursive;
-  text-align: center;
-  font-size:70px;
+  flex-direction: row;
 }
 
-.ohgod {
-  height:80vh;
+.site-heading {
+  padding: 150px 0;
+}
+
+.menu {
+  color:white;
+  background:black;
+  width:64px;
+  height:64px;
+  border-radius: 32px;
+  position:absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.menu-toogler {
   display:flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-}
-
-.ohgod .card {
-  height:40%;
-  display:block;
-  positon: relative;
-  color:green;;
-	perspective: 1000px;
-}
-
-.flipper {
-  margin: 0;
-  display:block;
-  position: relative;
-  width: 100%;
-  height: 100%;
-	transition: 0.6s;
-	transform-style: preserve-3d;
-}
-
-.flipper:hover {
-	transform: rotateY(180deg);
-}
-.flipper .upside {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-	backface-visibility: hidden;
-	top: 0;
-	left: 0;
+  height:64px;
+  cursor: pointer;
 }
 
-.flipper .downside h3
-{
-  text-align:center;
+.menu-toogler:hover {
+  transform: scale(1.1);
+}
+
+.hamburger {
+  margin:3px;
   display:block;
-  width:100%;
-  font-size:35px;
-  line-height:35px;
-}
-
-.flipper .downside p
-{
-  text-align:justify;
-  display:block;
-  font-size:15px;
-}
-
-.flipper .downside {
-	backface-visibility: hidden;
-	position: absolute;
-  width:100%;
-  height:100%;
-	top: 0;
-	left: 0;
-  transform: rotateY(180deg);
+  content: ' ';
+  height:3px;
   background: white;
-  color:black;
-}
-
-.flex-center-both {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height:100%;
-  width:100%;
-}
-
-.contact {
-  text-align: center;
-  flex-direction: column;
-}
-
-.contact form {
-  border-radius: 6px;
-}
-
-.contact input, .contact textarea {
-  border: 1px solid #666;
-  background: transparent;
-  border-radius: 12px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-.contact input {
-  border-bottom: 0px solid white;
-  border-radius: 0;
-}
-.contact input.first {
-  border-radius: 0;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-}
-
-.contact input[type="submit"] {
-  text-align: center;
-  margin: 5px;
-  padding:6px;
-  padding-left: 8px;
-  padding-right: 8px;
-  border-radius:18px;
-  border:1px solid #666;
-  transition: 0.3s ease-in;
-}
-.contact input[type="submit"]:hover {
-  background: white;
-  color:black;
-  border-color: transparent;
-}
-.contact a{
-  color:white
+  width: 40px;
 }
