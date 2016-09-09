@@ -5,6 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="/assets/vendor/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="/assets/css/application.css">
   </head>
   <body>
@@ -20,11 +21,16 @@
     </script>
     <header>
       <nav class="menu">
-         <label class="menu-toogler">
-           <span class="hamburger hamburguer-1"></span>
-           <span class="hamburger hamburguer-2"></span>
-           <span class="hamburger hamburguer-3"></span>
-         </label>
+        <a href="#" class="menu-toogler">
+          <span class="hamburger hamburguer-one"></span>
+          <span class="hamburger hamburguer-two"></span>
+          <span class="hamburger hamburguer-three"></span>
+        </a>
+        <ul class="menu-items">
+          <a href="#" class="menu-item menu-item-one"><i class="fa fa-user fa-2x" aria-hidden="true"></i></a>
+          <a href="#" class="menu-item menu-item-two"><i class="fa fa-anchor fa-2x" aria-hidden="true"></i></a>
+          <a href="#" class="menu-item menu-item-three"><i class="fa fa-automobile fa-2x" aria-hidden="true"></i></a>
+        </ul>
        </nav>
       <div class="container">
         <div class="row">
@@ -38,8 +44,15 @@
       </div>
     </header>
 
-
+    <script src="https://use.fontawesome.com/98e36aca33.js"></script>
     <script type="text/javascript" src="/assets/vendor/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="/assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+    $(function(){
+      $(".menu-toogler").on("click", function(){
+        $(".menu").toggleClass("open")
+      })
+    })
+    </script>
   </body>
 </html>
