@@ -89,7 +89,7 @@ header > .container {
   left: calc(50% - 10px);
   border-radius: 15px;
   animation-name: triangle;
-  animation-duration: 4s;
+  animation-duration: 7s;
   animation-timing-function: ease-in;
   animation-iteration-count: infinite;
 }
