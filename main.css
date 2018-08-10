@@ -46,6 +46,7 @@
 .hero .content h2 {
   display: block;
   font-size: 30px;
+  width: 550px;
 }
 
 .hero .content .links {
