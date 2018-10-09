@@ -10,7 +10,7 @@ const repoElement = ({
   return new DOMParser().parseFromString(`
     <div class="repo">
       <a href="${html_url}" target="_blank" rel="noopener noreferrer" class="image">
-        <img src="https://hugoraw.herokuapp.com/${name}/master/logo.png">
+        <img src="https://hugoraw.herokuapp.com/hdf1986/${name}/master/logo.png">
       </a>
       <a href="${html_url}" target="_blank" rel="noopener noreferrer" class="description">
         <h2>${name}</h2>
