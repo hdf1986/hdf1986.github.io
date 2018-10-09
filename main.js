@@ -10,7 +10,7 @@ const repoElement = ({
   return new DOMParser().parseFromString(`
     <div class="repo">
       <a href="${html_url}" target="_blank" rel="noopener noreferrer" class="image">
-        <img src="https://cdn.rawgit.com/hdf1986/${name}/master/logo.png">
+        <img src="https://hugoraw.herokuapp.com//${name}/master/logo.png">
       </a>
       <a href="${html_url}" target="_blank" rel="noopener noreferrer" class="description">
         <h2>${name}</h2>
@@ -38,7 +38,7 @@ const repoElement = ({
     'FreeCodeCamp BA Co-Organizer',
     '',
   ];
-  
+
   fetch('https://api.github.com/search/repositories?q=pinned+user:hdf1986+fork:true')
     .then(res => res.json())
     .then(({items}) => {
@@ -50,7 +50,7 @@ const repoElement = ({
       });
     })
 
-  
+
   let title = titles[Math.floor(Math.random() * titles.length)];
   const changeTitle = () => {
     setTimeout(() => {
@@ -70,10 +70,10 @@ const repoElement = ({
     if(titleElement.innerHTML === title) return changeTitle();
 
     titleElement.innerHTML += title[titleElement.innerHTML.length];
-    
+
     setTimeout(changeText, 100);
   }
-  
+
   setTimeout(changeText, 100);
   // setInterval(changeText, 3000);
 })()
