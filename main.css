@@ -7,6 +7,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+body {
+  background: black;
+}
+
 .container {
   width: 100%;
   min-height: 100vh;
@@ -200,6 +204,43 @@
   opacity: 0 !important;
 }
 
+@media only screen and (max-device-width: 1210px){
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero .content {
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .hero .content h1 {
+    padding-top: 15px;
+    font-size: 3rem;
+  }
+
+  .hero .content h2 {
+    font-size: 1rem;
+  }
+
+  .hero .content h1, .hero .content h2 {
+    display: inherit;
+    text-align: center;
+  }
+
+  .hero .links {
+    padding-top: 15px;
+    margin: 0 auto;
+  }
+
+  .hero .repos {
+    justify-content: center;
+  }
+
+  .hero .repos .repo {
+    margin-top: 15px;
+  }
+}
 
 @-webkit-keyframes pulse {
   0% {
