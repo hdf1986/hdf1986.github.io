@@ -36,7 +36,6 @@ const repoElement = ({
     'NodeJS developer',
     'React developer',
     'FreeCodeCamp BA Co-Organizer',
-    '',
   ];
 
   fetch('https://api.github.com/search/repositories?q=pinned+user:hdf1986+fork:true')
