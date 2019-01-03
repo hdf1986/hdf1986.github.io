@@ -32,9 +32,8 @@ const repoElement = ({
   const loadingElement = repos.querySelector('.loading');
   const titleElement = document.querySelector('.title');
   const titles = [
-    'Ruby On Rails Tech Lead',
+    'Ruby On Rails developer',
     'NodeJS developer',
-    'React developer',
     'FreeCodeCamp BA Co-Organizer',
   ];
 
