@@ -37,7 +37,7 @@ const repoElement = ({
     'FreeCodeCamp BA Co-Organizer',
   ];
 
-  fetch('https://api.github.com/search/repositories?q=pinned+user:hdf1986+fork:true')
+  fetch('https://api.github.com/search/repositories?q=pinned+user:hdf1986+fork:true&sort=stars')
     .then(res => res.json())
     .then(({items}) => {
       const reposElements = items.map(item => repoElement(item))
