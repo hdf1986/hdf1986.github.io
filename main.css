@@ -89,11 +89,10 @@ body {
 
 .hero .repo {
   z-index: 2;
-  min-width: 290px;
+  min-width: 250px;
   min-height: 270px;
   height: 270px;
-  max-width: 290px;
-  max-width: 270px;
+  max-width: 250px;
   border-color: rgb(51, 51, 51);
   border-width: 1px;
   border-style: solid;

@@ -32,9 +32,8 @@ const repoElement = ({
   const loadingElement = repos.querySelector('.loading');
   const titleElement = document.querySelector('.title');
   const titles = [
-    'Ruby On Rails developer',
-    'NodeJS developer',
-    'FreeCodeCamp BA Co-Organizer',
+    'Software developer',
+    'FreeCodeCamp BA Co-Organizer'
   ];
 
   fetch('https://api.github.com/search/repositories?q=pinned+user:hdf1986+fork:true&sort=stars')
