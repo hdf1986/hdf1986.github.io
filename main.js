@@ -32,8 +32,7 @@ const repoElement = ({
   const loadingElement = repos.querySelector('.loading');
   const titleElement = document.querySelector('.title');
   const titles = [
-    'Software developer',
-    'FreeCodeCamp BA Co-Organizer'
+    'Software developer'
   ];
 
   fetch('https://api.github.com/search/repositories?q=pinned+user:hdf1986+fork:true&sort=stars')
@@ -68,7 +67,7 @@ const repoElement = ({
 
     titleElement.innerHTML += title[titleElement.innerHTML.length];
 
-    setTimeout(changeText, 100);
+    //setTimeout(changeText, 100);
   }
 
   setTimeout(changeText, 100);
