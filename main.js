@@ -67,7 +67,7 @@ const repoElement = ({
 
     titleElement.innerHTML += title[titleElement.innerHTML.length];
 
-    //setTimeout(changeText, 100);
+    setTimeout(changeText, 100);
   }
 
   setTimeout(changeText, 100);
