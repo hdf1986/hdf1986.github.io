@@ -32,7 +32,9 @@ const repoElement = ({
   const loadingElement = repos.querySelector('.loading');
   const titleElement = document.querySelector('.title');
   const titles = [
-    'Software developer'
+    'Node developer',
+    'Ruby enthusiast',
+    'Twitch streamer'
   ];
 
   fetch('https://api.github.com/search/repositories?q=pinned+user:hdf1986+fork:true&sort=stars')
