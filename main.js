@@ -34,7 +34,8 @@ const repoElement = ({
   const titles = [
     'Node developer',
     'Ruby enthusiast',
-    'Twitch streamer'
+    'Twitch streamer',
+    'Web development mentor'
   ];
 
   fetch('https://api.github.com/search/repositories?q=pinned+user:hdf1986+fork:true&sort=stars')
