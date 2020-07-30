@@ -1,12 +1,16 @@
 import Head from "next/head";
 
+import styles from './LandingLayout.module.scss'
+
 const LandingLayout = ({ children }) => {
   return (
     <>
       <Head>
         <title>Hugo Farji</title>
       </Head>
-      {children}
+      <div className={styles.mainContainer}>
+       {children}
+      </div>
     </>
   )
 }
