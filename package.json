@@ -1,7 +1,7 @@
 {
   "name": "hdf1986.github.io",
   "version": "1.0.0",
-  "description": "",
+  "description": "My personal portfolio",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,8 +11,8 @@
     "url": "git+https://github.com/hdf1986/hdf1986.github.io.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Hugo David Farji <hi@hugo.farji.me>",
+  "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/hdf1986/hdf1986.github.io/issues"
   },
