@@ -73,6 +73,6 @@ const repoElement = ({
     setTimeout(changeText, 100);
   }
 
-  setTimeout(changeText, 100);
+  setTimeout(changeText, 1300);
   // setInterval(changeText, 3000);
 })()
