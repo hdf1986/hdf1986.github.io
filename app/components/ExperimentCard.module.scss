@@ -1,0 +1,28 @@
+.experimentCard {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: calc(100% - 30px);
+  max-width: 600px;
+  height: 300px;
+  border: 1px solid white;
+  margin-bottom: 15px;
+  margin: 10px;
+  position: relative;
+
+  > div {
+    flex: 1;
+    position: relative;
+
+    &:first-child {
+      height: 100%;
+      display: flex;
+      border-right: 1px solid white;
+    }
+
+    &:last-child {
+      padding: 10px;
+    }
+  }
+
+}

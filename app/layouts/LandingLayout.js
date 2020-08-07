@@ -14,7 +14,7 @@ const LandingLayout = ({ children }) => {
         <nav className={styles.navbar}>
           <ul className={styles.navbarList}>
             <li className={styles.navbarItem}><Link href="/">Inicio</Link></li>
-            <li className={styles.navbarItem}><Link href="/">Mis experimentos</Link></li>
+            <li className={styles.navbarItem}><Link href="/experiments">Mis experimentos</Link></li>
             <li className={styles.navbarItem}><Link href="/">Blog</Link></li>
             <li className={styles.navbarItem}><Link href="/">Contacto</Link></li>
           </ul>

@@ -2,7 +2,6 @@ import LandingLayout from '~/app/layouts/LandingLayout'
 import RandomTypingText from '~/app/components/RandomTypingText';
 import LandingArrow from '~/app/components/LandingArrow';
 
-
 import styles from './index.module.scss'
 
 const Index = () => {
