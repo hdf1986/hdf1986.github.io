@@ -34,7 +34,6 @@ const repoElement = ({
   const titles = [
     'Node developer',
     'Ruby enthusiast',
-    'Twitch streamer',
     'Web development mentor'
   ];
 
@@ -73,6 +72,6 @@ const repoElement = ({
     setTimeout(changeText, 100);
   }
 
-  setTimeout(changeText, 1300);
+  setTimeout(changeText, 3300);
   // setInterval(changeText, 3000);
 })()
