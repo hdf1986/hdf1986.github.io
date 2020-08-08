@@ -33,8 +33,10 @@ const repoElement = ({
   const titleElement = document.querySelector('.title');
   const titles = [
     'Node developer',
-    'Ruby enthusiast',
-    'Web development mentor'
+    'Ruby developer',
+    'React developer',
+    'Web development mentor',
+    'Rust Entusiast'
   ];
 
   fetch('https://api.github.com/search/repositories?q=pinned+user:hdf1986+fork:true&sort=stars')
