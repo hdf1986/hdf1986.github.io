@@ -49,7 +49,6 @@ body {
 .hero .content h2 {
   display: block;
   font-size: 30px;
-  width: 550px;
 }
 
 .hero .content .links {
@@ -307,14 +306,14 @@ body {
   }
 }
 
-
 @media (max-width: 1210px){
   .hero {
     flex-direction: column;
   }
 
   .hero .content {
-    height: auto;
+    min-height: 100vh;
+    justify-content: center;
     padding-bottom: 30px;
   }
 
@@ -332,7 +331,8 @@ body {
     text-align: center;
   }
 
-  .hero .links {
+  .hero .content .links {
+    width: 80%;
     padding-top: 15px;
     margin: 0 auto;
   }
@@ -343,6 +343,43 @@ body {
 
   .hero .repos .repo {
     margin-top: 15px;
+  }
+
+  .bio-header h1, .bio-header h2 {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .bio {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bio-text {
+    width: 80vw;
+    height: auto;
+    text-align: justify;
+  }
+  
+  .bio-header {
+    height: auto;
+  }
+
+  @keyframes expand-bio-info {
+    0% {
+      height: auto;
+      opacity: 0;
+    }
+  
+    30% {
+      height: auto;
+      opacity: 0;
+    }
+  
+    100% {
+      height: auto;
+      opacity: 1;
+    }
   }
 }
 
