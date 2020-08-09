@@ -33,9 +33,10 @@ const repoElement = ({
   const titleElement = document.querySelector('.title');
   const titles = [
     'Node developer',
-    'Ruby enthusiast',
-    'Twitch streamer',
-    'Web development mentor'
+    'Ruby developer',
+    'React developer',
+    'Web development mentor',
+    'Rust Entusiast'
   ];
 
   fetch('https://api.github.com/search/repositories?q=pinned+user:hdf1986+fork:true&sort=stars')
@@ -73,6 +74,6 @@ const repoElement = ({
     setTimeout(changeText, 100);
   }
 
-  setTimeout(changeText, 1300);
+  setTimeout(changeText, 3300);
   // setInterval(changeText, 3000);
 })()

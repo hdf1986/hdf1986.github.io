@@ -41,7 +41,6 @@ body {
 }
 
 .hero .content h1 {
-  flex: 1;
   display: flex;
   font-size: 75px;
   font-weight: bold;
@@ -50,7 +49,6 @@ body {
 .hero .content h2 {
   display: block;
   font-size: 30px;
-  width: 550px;
 }
 
 .hero .content .links {
@@ -249,13 +247,73 @@ body {
   animation-delay: 1.9s;
 }
 
+.bio {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bio-header {
+  height: 270px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.bio-text {
+  height: 0px;
+  max-width: 540px;
+  animation: 5s expand-bio-info;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.bio-text p {
+  animation: 0.5s spawn;
+  animation-delay: 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  font-size: 13px;
+}
+
+.bio-text a{
+  animation: 0.5s spawn;
+  animation-delay: 3s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  color: white;
+  text-decoration: none;
+}
+
+@keyframes expand-bio-info {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+
+  30% {
+    height: 270px;
+    opacity: 0;
+  }
+
+  100% {
+    height: 270px;
+    opacity: 1;
+  }
+}
+
 @media (max-width: 1210px){
   .hero {
     flex-direction: column;
   }
 
   .hero .content {
-    height: auto;
+    min-height: 100vh;
+    justify-content: center;
     padding-bottom: 30px;
   }
 
@@ -273,7 +331,8 @@ body {
     text-align: center;
   }
 
-  .hero .links {
+  .hero .content .links {
+    width: 80%;
     padding-top: 15px;
     margin: 0 auto;
   }
@@ -284,6 +343,43 @@ body {
 
   .hero .repos .repo {
     margin-top: 15px;
+  }
+
+  .bio-header h1, .bio-header h2 {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .bio {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bio-text {
+    width: 80vw;
+    height: auto;
+    text-align: justify;
+  }
+  
+  .bio-header {
+    height: auto;
+  }
+
+  @keyframes expand-bio-info {
+    0% {
+      height: auto;
+      opacity: 0;
+    }
+  
+    30% {
+      height: auto;
+      opacity: 0;
+    }
+  
+    100% {
+      height: auto;
+      opacity: 1;
+    }
   }
 }
 
